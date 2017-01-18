@@ -26,7 +26,7 @@ github_username:  rgbplace
 
 
 # setup
-permalink: /:categories/:year:month:day/:title
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
