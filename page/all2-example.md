@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example
-permalink: /all_posts/example
+permalink: /example/
 ---
 
 <div class="home">

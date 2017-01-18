@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Start
-permalink: /all_posts/start
+permalink: /start/
 ---
 
 <div class="home">
