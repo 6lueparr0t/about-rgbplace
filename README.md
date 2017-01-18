@@ -2,6 +2,6 @@
 RGB place - Blog
 
 
-### Link
+## Link
 
 [RGBplace.github.io](https://rgbplace.github.io)
