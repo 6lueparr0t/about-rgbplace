@@ -16,3 +16,29 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+
+<hr/>
+
+  <ul class="post-list">
+{% if page.categories contains "start" %}
+	{% for post in site.categories.start %}
+		{% if post.categories contains "start" and post.page_num == page.page_num  %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}
+          <span class="post-datetime">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </a>
+      </li>
+		{% endif %}
+	{% endfor %}
+{% elsif page.categories contains "example" %}
+	{% for post in site.categories.example %}
+		{% if post.categories contains "example" and post.page_num == page.page_num  %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}
+          <span class="post-datetime">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </a>
+      </li>
+		{% endif %}
+	{% endfor %}
+{% endif %}
+  </ul>

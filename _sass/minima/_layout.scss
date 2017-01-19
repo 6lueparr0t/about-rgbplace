@@ -191,9 +191,14 @@
 
 .post-link {
   display: block;
-  font-size: 18px;
+  font-size: 14px;
 }
 
+.post-datetime {
+  font-size: $small-font-size;
+  color: $grey-color;
+  float : right;
+}
 
 
 /**
