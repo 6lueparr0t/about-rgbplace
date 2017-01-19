@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Example
-permalink: /example/0
+permalink: /example/
 ---
 
 <div class="home">
