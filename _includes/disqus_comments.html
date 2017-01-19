@@ -27,7 +27,7 @@ function ready(test) {
   if (document.readyState != 'loading'){
     test();
   } else {
-    document.addEventListener('DOMContentLoaded', fn);
+    document.addEventListener('DOMContentLoaded', test);
   }
 }
 </script>
