@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Example
-permalink: /example/
+permalink: /example/0
 ---
 
 <div class="home">
 <hr/>
-
 {% if site.categories.example == null %}
 {% else %}
     {% for post in site.categories.example %}
