@@ -23,7 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  rgbplace
 disqus:
-  shortname: "rgb-place"
+  id: "rgbplace"
 
 
 # setup
