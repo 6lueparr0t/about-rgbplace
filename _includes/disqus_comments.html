@@ -22,9 +22,7 @@ s.setAttribute('data-timestamp', +new Date());
   
     $(document).ready(function() {
       $('#my-disqus-block iframe').contents().find("head")
-      .append($("<style type='text/css'>  iframe {'height': '327px',
-'height': 'auto !important',
-'min-height': '327px'}  </style>"));
+      .append($("<style type='text/css'>  iframe {'height': '327px';'height': 'auto !important'; 'min-height':'327px'}  </style>"));
     });
   
 </script>
