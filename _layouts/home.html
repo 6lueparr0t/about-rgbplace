@@ -3,39 +3,49 @@ layout: default
 ---
 
 <link rel="stylesheet" href="//idangero.us/swiper/dist/css/swiper.min.css">
- 
-<style>.home{position:relative;height:500px;}.swiper-container{width:100%;height:100%;}.swiper-slide{text-align:center;font-size:18px;background:#000;}.swiper-slide img{width:auto;height:auto;max-width:100%;max-height:100%;-ms-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);transform:translate(-50%,-50%);position:absolute;left:50%;top:50%;}</style>
-
-<div class="home">
+<style>.home{position:relative;height:500px;}.swiper-container{width:100%;height:100%;}.swiper-slide{overflow:hidden;}</style>
  
 <div class="swiper-container">
 <div class="swiper-wrapper">
-<div class="swiper-slide"><img src="/assets/image/slide1.jpg"/></div>
-<div class="swiper-slide"><img src="/assets/image/slide2.jpg"/></div>
-<div class="swiper-slide"><img src="/assets/image/slide3.jpg"/></div>
-<div class="swiper-slide"><img src="/assets/image/slide4.jpg"/></div>
-<div class="swiper-slide"><img src="/assets/image/slide5.jpg"/></div>
+<div class="swiper-slide">
+<div class="swiper-zoom-container">
+<img src="/assets/image/slide1.jpg">
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-zoom-container">
+<img src="/assets/image/slide2.jpg">
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-zoom-container">
+<img src="/assets/image/slide3.jpg">
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-zoom-container">
+<img src="/assets/image/slide4.jpg">
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-zoom-container">
+<img src="/assets/image/slide5.jpg">
+</div>
+</div>
 </div>
  
 <div class="swiper-pagination swiper-pagination-white"></div>
- 
-<div class="swiper-button-next swiper-button-white"></div>
 <div class="swiper-button-prev swiper-button-white"></div>
-</div>
-
+<div class="swiper-button-next swiper-button-white"></div>
 </div>
  
 <script src="//idangero.us/swiper/dist/js/swiper.min.js"></script>
  
 <script>
     var swiper = new Swiper('.swiper-container', {
+        zoom: true,
         pagination: '.swiper-pagination',
-        slidesPerView: 1,
-        paginationClickable: true,
-		calculateHeight:true,
-        spaceBetween: 30,
-        keyboardControl: true,
         nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        prevButton: '.swiper-button-prev'
     });
 </script>
