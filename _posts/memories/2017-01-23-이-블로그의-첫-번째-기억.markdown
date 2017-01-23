@@ -44,5 +44,5 @@ categories: memories
 나름 안정적인 생활을 하는 요즘, 가끔 그때 그 시절이 떠오른다..
 
 
-[department-store: {{ site.url }}/assets/image/2017-01-23_department-store.jpg "department-store.jpg"
+[department-store]: {{ site.url }}/assets/image/2017-01-23_department-store.jpg "department-store.jpg"
 [suit]: {{ site.url }}/assets/image/2017-01-23_suit.jpg "suit.jpg"
