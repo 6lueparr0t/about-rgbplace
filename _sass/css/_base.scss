@@ -37,9 +37,10 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-p
+p,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * 2;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 
