@@ -3,7 +3,6 @@ layout: post
 title:  "First Example"
 date:   2017-01-19 02:10:03 +0900
 categories: example
-page_num: 0
 ---
 
 안녕하세요.

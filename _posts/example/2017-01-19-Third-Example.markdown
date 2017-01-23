@@ -3,7 +3,6 @@ layout: post
 title:  "Third Example"
 date:   2017-01-19 17:19:43 +0900
 categories: example
-page_num: 0
 ---
 
 3번째 example 게시물 입니다.
