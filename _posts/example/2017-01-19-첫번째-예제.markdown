@@ -52,7 +52,30 @@ window.addEventListener("onload", setInterval(startTime, 500));
 // ID가 'clock' 인 태그를 찾아 0.5초에 한번씩 시간을 업데이트 합니다.
 {% endhighlight %}
 
-post로 작성된 페이지에서는 결과 확인이 안되네요.<br/>
-[w3school][w3school_link] 홈페이지를 통해 한번 확인해보시면 잘 나옵니다.
+\* 결과
+<div id="clock" ></div>
 
+<script>
+function checkTime(i) {
+    if (i < 10) i = "0" + i;
+    return i;
+}
+
+function startTime() {
+    var today = new Date();
+    var year = today.getFullYear();
+    var month= checkTime(today.getMonth()+1);
+    var day  = checkTime(today.getDate());
+    var h = checkTime(today.getHours());
+    var m = checkTime(today.getMinutes());
+    var s = checkTime(today.getSeconds());
+
+    document.getElementById('clock').innerHTML =
+        year + "-" + month + "-"+ day + " " + h + ":" + m + ":" + s + " +0900<br/><br/>";
+}
+
+window.addEventListener("onload", setInterval(startTime, 500));
+</script>
+
+더 많은 예제는 [w3school][w3school_link] 홈페이지를 통해 한번 확인해보세요
 [w3school_link]: http://www.w3schools.com/
