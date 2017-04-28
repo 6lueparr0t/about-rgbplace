@@ -25,6 +25,14 @@ github_username: RGBplace
 disqus:
   shortname: rgb-place
 
+category:
+- title: About 
+  url: /about/
+- title: Posts
+  url: /pages/
+- title: Guest
+  url: /guest/
+
 
 # setup
 permalink: /:categories/:title

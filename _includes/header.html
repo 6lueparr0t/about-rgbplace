@@ -14,13 +14,9 @@
       </span>
 
       <div class="trigger">
-          <a class="page-link" href="/about/">About</a>
-          <a class="page-link" href="/pages/">Posts</a>
-          <a class="page-link" href="/guest/">Guest</a>
-<!--
-          <a class="page-link" href="/pages/example/">Example</a>
-          <a class="page-link" href="/pages/start/">Start</a>
--->
+      {% for menu in site.category %}
+          <a  class="page-link" href="{{menu.url}}">{{menu.title}}</a>
+      {% endfor %}
       </div>
     </nav>
 
