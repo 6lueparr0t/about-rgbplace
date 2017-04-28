@@ -38,6 +38,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "css/open-color",
   "css/base",
   "css/layout",
   "css/syntax-highlighting"
