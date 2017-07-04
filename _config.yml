@@ -16,8 +16,7 @@
 title: RGB place
 email: daihyun99@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  RGB place는 Red Green Blue Place 의 줄임말로,
-  다양한 색깔의 장소를 소개하는 사이트 입니다.
+  RGB place는 다양한 색깔의 장소를 소개하는 사이트 입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
