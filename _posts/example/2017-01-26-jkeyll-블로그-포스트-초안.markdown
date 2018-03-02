@@ -8,16 +8,17 @@ categories: example
 이미지의 경우
 
 ```
-![백화점][department-store]
+![example1][이미지1]
 .
 .
 .
-[department-store]: {{ site.url }}/이미지경로 "department-store.jpg"
+[이미지1]: {{ site.url }}/이미지경로 "snow.jpg"
 ```
 
-`[department-store]` 같은 건 제일 마지막에 선언해준다.
+`[이미지1]` 이후 하단부에 선언해준다.
+[example1]의 경우, 이미지의 alt 속성에 들어간다.
 
-![백화점][department-store]
+![example1][이미지1]
 
 두번 띄어쓰기를 했을 때 `<p></p>`태그가 생성되므로, 단순 줄 바꿈을 하려면 `<br/>`태그를 쓴다.
 
@@ -30,7 +31,7 @@ categories: example
 
 결과가 어떻게 나오는지는 밑의 결과를 브라우저의 개발자 도구를 이용해서 확인해보도록 하자
 
-햔 줄<br/>
+한 줄<br/>
 엔터
 
 태그 생성 확인
@@ -40,4 +41,4 @@ categories: example
 
 현재 참고하고 있는 정리가 잘 된 [블로그](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans/ "워드프레스 마크다운(Markdown) 문법 설명")
 
-[department-store]: {{ site.url }}/assets/image/2017-01-23_department-store.jpg "department-store.jpg"
+[이미지1]: {{ site.url }}/assets/image/2018_03_02.jpg "snow.jpg"
