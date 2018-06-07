@@ -1,5 +1,5 @@
 # RGBplace.github.io
-RGB place - GitHub Blog
+RGB place - Github Blog
 
 ## Link
 [github.RGBplace.com](https://github.rgbplace.com)
