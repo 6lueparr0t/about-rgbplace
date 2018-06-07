@@ -1,8 +1,8 @@
 # RGBplace.github.io
-RGB place - Blog
+RGB place - GitHub Blog
 
 ## Link
-[RGBplace.github.io](https://rgbplace.github.io)
+[github.RGBplace.com](https://github.rgbplace.com)
 
 
 ## Memo
