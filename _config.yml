@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RGB place
-email: daihyun99@gmail.com
+email: 6lueparr0t@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  RGB place는 다양한 색깔의 장소를 소개하는 사이트 입니다.
+  RGB place!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
