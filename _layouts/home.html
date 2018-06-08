@@ -4,7 +4,7 @@ layout: default
 
 
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.3/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 
 <div class="home">
 
@@ -19,18 +19,10 @@ Hello World
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 		</div>
 	</div>
-    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide2.jpg"/></a>
-	
-	</div>
-    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide3.jpg"/></a>
-	
-	</div>
-    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide4.jpg"/></a>
-	
-	</div>
-    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide5.jpg"/></a>
-	
-	</div>
+    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide2.jpg"/></a> </div>
+    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide3.jpg"/></a> </div>
+    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide4.jpg"/></a> </div>
+    <div class="swiper-slide"><a href="#"><img src="/assets/image/slide5.jpg"/></a> </div>
   </div>
    
   <div class="swiper-pagination swiper-pagination-white"></div>
@@ -41,18 +33,20 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 </div>
  
-<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.3/js/swiper.min.js"></script>
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 1,
-        paginationClickable: true,
-		calculateHeight:true,
-        spaceBetween: 30,
-        keyboardControl: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-		effect: 'fade',
-    });
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
 </script>
