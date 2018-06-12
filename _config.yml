@@ -22,12 +22,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username: RGBplace
 disqus:
-  shortname: rgb-place
+  shortname: rgbplace
 
 category:
 - title: About 
   url: /about/
-- title: Posts
+- title: Pages
   url: /pages/
 - title: Guest
   url: /guest/
