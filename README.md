@@ -10,6 +10,8 @@ RGB place - Github Blog
 1. set alias
 
 ```
+export JEKYLL="/foo/bar/home"
+
 alias jkhome="  cd $JEKYLL"
 alias jkcss="   cd $JEKYLL/_sass/"
 
