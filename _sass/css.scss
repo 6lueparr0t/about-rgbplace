@@ -52,6 +52,11 @@ $on-laptop:        800px !default;
 }
 
 @font-face {
+    font-family: 'menu';
+    src: url("fonts/slkscr.ttf");
+}
+
+@font-face {
     font-family: 'pixel';
     src: url("fonts/kongtext.ttf");
 }

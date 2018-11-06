@@ -6,14 +6,12 @@
         <ul class="contact-list">
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            {% include icon-github.html username=site.github_username %} / <a href='http://{{ site.blog }}' target='_blank'>Blog</a>
           </li>
           {% endif %}
 
           <li>&nbsp;</li>
-            {% if site.email %}
            <li>e-mail <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
 
           <li>&nbsp;</li>
           <li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>
@@ -21,7 +19,7 @@
       </div>
 
       <div class="footer-col footer-col-23">
-        <p>{{ site.description | escape }}</p>
+        <div style='margin-bottom:1.2rem;'>{{ site.description | escape }}</div>
       </div>
     </div>
  
