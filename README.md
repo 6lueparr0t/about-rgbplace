@@ -2,7 +2,7 @@
 RGB place - Github Blog
 
 ## Link
-[github.RGBplace.com](http://github.rgbplace.com)
+[git.RGBplace.com](http://git.rgbplace.com)
 
 
 ## Memo
