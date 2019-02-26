@@ -2,7 +2,7 @@
   <img alt="RGB Place" src="/assets/image/RGB_place.png">
 </div>
 
-##Link
+## Link
 
 <a href='https://rgbplace.com' target='_blank'>https://rgbplace.com</a>
 
