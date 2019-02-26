@@ -26,8 +26,6 @@ disqus:
   shortname: 6lueparr0t
 
 category:
-- title: About 
-  url: /about/
 - title: Pages
   url: /pages/
 - title: FAQ
