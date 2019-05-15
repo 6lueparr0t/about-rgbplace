@@ -1,8 +1,8 @@
 <div align="center">
-  <img alt="RGB Place" src="/assets/image/RGB_place.png">
+  <img alt="RGB Place" src="/assets/image/RGB_place.png" width="75%">
 </div>
 
-##Link
+## Link
 
 <a href='https://rgbplace.com' target='_blank'>https://rgbplace.com</a>
 
