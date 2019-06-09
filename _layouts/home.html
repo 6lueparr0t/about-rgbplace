@@ -5,9 +5,21 @@ layout: default
 
 <div class="home">
 
-<h3 style='font-family:pixel;font-size:1rem;'>Photo News</h3>
+<h3>Photo News</h3>
 <div class="swiper-container">
   <div class="swiper-wrapper">
+	<div class="swiper-slide"><a href="#"><img src="/assets/image/alone.png"/></a>
+		<div class="swiper-title">
+			<a href='http://rgbplace.com' style='color:black;'>페이지 업데이트 중 . .</a>
+		</div>
+
+		<div class="swiper-content">
+			??? : Git 페이지 업데이트 중입니다.<br/>
+			어차피 이 swiper 도 곧 사라질 예정이지만<br/>
+			누가 와서 볼 것도 아니지만<br/>
+			그냥 한번 남겨봅니다.
+		</div>
+	</div>
 	<div class="swiper-slide"><a href="#"><img src="/assets/image/20180726_001.png"/></a>
 		<div class="swiper-title">
 			<a href='http://rgbplace.com' style='color:black;'>November 2018, Beta Open !</a>
@@ -28,6 +40,9 @@ layout: default
 <script>
 var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
+	keyboard: {
+		enabled: true,
+	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

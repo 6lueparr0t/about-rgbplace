@@ -26,12 +26,12 @@ disqus:
   shortname: 6lueparr0t
 
 category:
-- title: About
-  url: /about/
+#- title: About
+#  url: /about/
+#- title: FAQ
+#  url: /faq/
 - title: Blog
   url: /pages/
-- title: FAQ
-  url: /faq/
 
 
 # setup

@@ -6,15 +6,14 @@
         <ul class="contact-list">
           {% if site.github_username %}
           <li>
-            <a href='https://rgbplace.com'>RGB place</a> / {% include icon-github.html username=site.github_username %} / <a href='https://{{ site.blog }}'>Blog</a>
+			  <a class="rgbplace" href='https://rgbplace.com'>
+				  <span class='r'>R</span><span class='g'>G</span><span class='b'>B</span>
+				  <span class='place'>place</span>
+			  </a> / {% include icon-github.html username=site.github_username %} / <a class="b" href="https://{{ site.blog }}">Blog</a>
           </li>
           {% endif %}
-
-          <li>&nbsp;</li>
-           <li>e-mail <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-
-          <li>&nbsp;</li>
-          <li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>
+          <li>e-mail <a class="r" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><p class="rss-subscribe">subscribe <a class="r" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>
         </ul>
       </div>
 

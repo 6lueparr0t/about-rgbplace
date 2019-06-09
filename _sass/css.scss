@@ -1,7 +1,7 @@
 // Define defaults for each variable.
 
 //$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-family: "Nanum Gothic",sans-serif !default;
+$base-font-family: "dot" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -11,7 +11,7 @@ $base-margin-bottom: 30px !default;
 $spacing-unit:     15px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: #343a40 !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -42,21 +42,23 @@ $on-laptop:        800px !default;
   "css/open-color",
   "css/logo",
   "css/base",
+  "css/header",
+  "css/footer",
   "css/layout",
   "css/syntax-highlighting"
 ;
 
 @font-face {
     font-family: 'logo';
-    src: url("fonts/04b_20__.ttf");
+    src: url("fonts/04b_20__.ttf") format('truetype'), url("fonts/04b_20__.woff") format('woff');
 }
 
 @font-face {
     font-family: 'menu';
-    src: url("fonts/slkscr.ttf");
+    src: url("fonts/slkscr.ttf") format('truetype'), url("fonts/slkscr.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'pixel';
-    src: url("fonts/kongtext.ttf");
+    font-family: 'dot';
+    src: url("fonts/DungGeunMo.ttf") format('truetype'), url("fonts/DungGeunMo.woff") format('woff');
 }
