@@ -1,4 +1,6 @@
-self._386 = self._386 || {};
+self._386 = self._386 || {
+    onePass : true
+};
 
 !function () {
   var character = { height: 20, width: 12.4 };
@@ -44,7 +46,7 @@ self._386 = self._386 || {};
       // If the user specified that the visibility is hidden, then we
       // start at the first pass ... otherwise we just do the 
       // cursor fly-by
-      pass = (getComputedStyle(document.body)['visibility'] == 'visible') ? 1 : 0,
+      pass = (getComputedStyle(document.body)['visibility'] === 'visible') ? 1 : 0,
       height = window.innerHeight,
       width = window.innerWidth,
 

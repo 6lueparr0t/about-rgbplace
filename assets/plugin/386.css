@@ -2,7 +2,13 @@
 /* CSS Document */
 
 body {
-	visibility: hidden;
+  visibility: hidden;
+  background: #343a40;
+  background-image: url("http://pixelartmaker.com/art/8f6c49d5035cd32.png");
+  background-position:center;
+  background-size: 35% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #wrap386 {
@@ -12,7 +18,7 @@ body {
   z-index: 9999999;
   width: 100%;
   height: 100%;
-  background: #000084;
+  background: #343a40;
 }
 
 #bar386 {
@@ -22,7 +28,7 @@ body {
   margin-top: -20px;
   font-weight: bold;
   color: #ffffff;
-  background: #000084;
+  background: #343a40;
 }
 
 #cursor386 {
