@@ -104,7 +104,7 @@ self._386 = self._386 || {};
           cursor.style.bottom = row + "px";
         }
       }
-    }, 1);
+    }, 2);
   }
   loading();
 }();
