@@ -85,7 +85,7 @@ self._386 = self._386 || {
 		}, 1);
 	}
 
-	window.addEventListener("load", (event) => {
+	window.addEventListener("load", function (event) {
 		loading();
 	});
 }();
