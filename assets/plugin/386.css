@@ -4,7 +4,7 @@
 body {
   visibility: hidden;
   background: #343a40;
-  background-image: url("http://pixelartmaker.com/art/8f6c49d5035cd32.png");
+  background-image: url("/assets/img/loading.png");
   background-position:center;
   background-size: 35% auto;
   background-repeat: no-repeat;
