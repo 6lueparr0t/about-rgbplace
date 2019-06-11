@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="RGB Place" src="/assets/image/RGB_place.png" width="75%">
+  <img alt="RGB Place" src="/assets/img/RGB_place.png" width="75%">
 </div>
 
 ## Link
