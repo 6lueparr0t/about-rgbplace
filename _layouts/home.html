@@ -2,13 +2,14 @@
 layout: default
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link rel="stylesheet" href="{{ "/assets/plugin/386.css" | relative_url}}">
 
 <div class="home">
 
 <h3>Photo News</h3>
 <div class="swiper-container">
   <div class="swiper-wrapper">
-	<div class="swiper-slide"><a href="#"><img src="/assets/image/alone.png"/></a>
+	<div class="swiper-slide"><a href="#"><img src="/assets/img/alone.png"/></a>
 		<div class="swiper-title">
 			<a href='#'>페이지 업데이트 중 . .</a>
 		</div>
@@ -19,7 +20,7 @@ layout: default
 			그냥 한번 남겨봅니다.
 		</div>
 	</div>
-	<div class="swiper-slide"><a href="#"><img src="/assets/image/20180726_001.png"/></a>
+	<div class="swiper-slide"><a href="#"><img src="/assets/img/20180726_001.png"/></a>
 		<div class="swiper-title">
 			<a href='http://rgbplace.com'>November 2018, Beta Open !</a>
 		</div>
@@ -35,6 +36,7 @@ layout: default
 </div>
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="{{ "/assets/plugin/386.js" | relative_url}}"></script>
 
 <script>
 var swiper = new Swiper('.swiper-container', {

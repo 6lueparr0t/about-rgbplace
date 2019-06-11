@@ -41,4 +41,4 @@ categories: example
 
 현재 참고하고 있는 정리가 잘 된 [블로그](http://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans/ "워드프레스 마크다운(Markdown) 문법 설명")
 
-[이미지1]: {{ site.url }}/assets/image/2018_03_02.jpg "snow.jpg"
+[이미지1]: {{ site.url }}/assets/img/2018_03_02.jpg "snow.jpg"
