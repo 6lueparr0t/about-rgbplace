@@ -2,7 +2,7 @@
   function loading() {
 
     wrap = document.createElement('div'),
-    wrap.id = "wrap386";
+    wrap.id = "wrap";
 
     document.body.appendChild(wrap);
     document.body.style.visibility='visible';
@@ -25,4 +25,3 @@
       loading();
   });
 }();
-
