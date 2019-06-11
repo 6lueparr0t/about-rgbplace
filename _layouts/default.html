@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<script>
-    console.log('load');
-</script>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
   <meta charset='UTF-8'>
@@ -21,6 +18,7 @@
   {% include google-analytics.html %}
   {% endif %}
 </head>
+
   <body>
 
     {% include header.html %}
@@ -37,5 +35,7 @@
 
 </html>
 <script>
+window.addEventListener("load", function (event) {
     console.log('load complete');
+});
 </script>
