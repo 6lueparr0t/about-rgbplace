@@ -3,7 +3,7 @@ self._386 = self._386 || {
 };
 
 !function () {
-  var character = { height: 20, width: 12.4 };
+  var character = { height: 80, width: 12.4 };
 
   function loading() {
 
