@@ -19,6 +19,11 @@ body {
   width: 100%;
   height: 100%;
   background: #343a40;
+  background-image: url("/assets/img/loading.png");
+  background-position:center;
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #bar386 {
