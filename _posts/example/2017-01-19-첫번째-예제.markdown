@@ -69,7 +69,9 @@ function startTime() {
         year + "-" + month + "-"+ day + " " + h + ":" + m + ":" + s + " +0900<br/><br/>";
 }
 
-window.addEventListener("onload", setInterval(startTime, 500));
+window.addEventListener("load", (event) => {
+    setInterval(startTime, 500);
+});
 </script>
 
 더 많은 예제는 [w3school][w3school_link] 홈페이지를 통해 한번 확인해보세요
