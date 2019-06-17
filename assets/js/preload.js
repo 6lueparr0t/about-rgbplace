@@ -3,7 +3,7 @@ self._386 = self._386 || {
 };
 
 !function () {
-	var character = { height: 80, width: 12.4 };
+	var character = { height: 20, width: 12.4 };
 
 	function loading() {
 
@@ -91,7 +91,10 @@ self._386 = self._386 || {
         document.body.className = 'preload';
 
 		window.addEventListener("load", function (event) {
-            loading();
+            setTimeout(function() {
+                loading();
+			}, 3000);
+
             localStorage.setItem('preload', 'on');
 		});
     }
