@@ -1,5 +1,5 @@
 self._386 = self._386 || {
-	onePass : true,
+	//onePass : true,
 };
 
 !function () {
@@ -85,7 +85,14 @@ self._386 = self._386 || {
 		}, 1);
 	}
 
-	window.addEventListener("load", function (event) {
-		loading();
-	});
+    var preload_sw = localStorage.getItem('preload');
+
+    if(preload_sw != 'on') {
+        document.body.className = 'preload';
+
+		window.addEventListener("load", function (event) {
+            loading();
+            localStorage.setItem('preload', 'on');
+		});
+    }
 }();

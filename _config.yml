@@ -26,10 +26,10 @@ disqus:
   shortname: 6lueparr0t
 
 category:
-#- title: About
-#  url: /about/
-#- title: FAQ
-#  url: /faq/
+- title: me
+  url: /me/
+#- title: QNA
+#  url: /qna/
 - title: Blog
   url: /pages/
 
