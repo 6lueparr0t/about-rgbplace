@@ -5,7 +5,7 @@ body.preload {
 	visibility: hidden;
 	background: $background-color;
 	background-image: url("/assets/img/loading.gif");
-	background-position:center 300px;
+	background-position:center calc(100% - 300px);
 	background-size: 200px auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
