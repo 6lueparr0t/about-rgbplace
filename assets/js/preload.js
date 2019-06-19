@@ -1,5 +1,5 @@
 self._386 = self._386 || {
-	//onePass : true,
+	onePass : true,
 };
 
 !function () {
