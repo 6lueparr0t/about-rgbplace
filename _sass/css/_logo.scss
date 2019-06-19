@@ -2,7 +2,7 @@
 	font-family: "logo" !important;
 	font-size:2rem;
 
-	@media screen and (max-width : 860px) {
+	@include media-query($on-laptop) {
 		font-size: 1.2rem;
 		position:absolute;
 		padding: 0;
