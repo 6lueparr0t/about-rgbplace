@@ -49,7 +49,7 @@
 			top: 30px;
 			margin-left: auto;
 			margin-right: auto;
-			background: #bdae58;
+			background: #202428;
 			width: calc(100% - 140px);
 			min-height: 80px;
 			height: calc(100% - 80px);
@@ -100,6 +100,10 @@
 				position: relative;
 				top: -8px;
 				overflow:hidden;
+
+				& .text {
+					color: white;
+				}
 			}
 		}
 
