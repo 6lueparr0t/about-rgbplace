@@ -1,6 +1,7 @@
 .gameboy {
 	position: relative;
 	display: block;
+	font-size:1.5rem;
 	margin: 20px auto;
 	width: 100%;
 	min-height: 200px;
@@ -104,7 +105,7 @@
 
 			& .header {
 				position: relative;
-				top: -50px;
+				top: -74px;
 				width: 100%;
 				height: 30px;
 				padding-top: 10px;
@@ -161,10 +162,12 @@
 			.main {
 				position: relative;
 				top: -20px;
+				height:480px;
 				overflow:hidden;
 
 				@include media-query($on-laptop) {
-					top : 8px;
+					top : -10px;
+					height:244px;
 				}
 
 				& .text {
@@ -242,30 +245,20 @@
 				border:none;
 				z-index:1;
 
-				&:hover {
-					content: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='currentColor' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E")  !important;
-				}
-
 				&.sound-on {
 					content: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='%23ffffff' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E") !important;
 
-					&:hover {
-						content:url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='%23585858' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E")  !important;
-					}
 				}
-			}
-
-			&:hover {
-				content: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='currentColor' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E");
 			}
 
 			&.sound-on {
 				content: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='currentColor' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E");
 
-				&:hover {
-					content:url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='music' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-music fa-w-16'%3E%3Cpath fill='%23585858' d='M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z' class=''%3E%3C/path%3E%3C/svg%3E");
-				}
 			}
 		}
 	}
+}
+
+.typed-cursor{
+	color:white;
 }

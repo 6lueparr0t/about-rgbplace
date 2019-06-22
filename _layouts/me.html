@@ -3,38 +3,21 @@ layout: default
 comments: true
 ---
 <!-- me content start -->
-<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-<style>
-    html {
-        cursor : default;
-    }
-
-    a, button {
-        cursor: pointer;
-    }
-
-    html, body, pre, code, kbd, samp {
-        font-family: "dot";
-    }
-
-    main .wrapper {
-        max-width:600px;
-        padding-right: 7.5px !important;
-        padding-left: 7.5px !important;
-    }
-</style>
+<link href='https://unpkg.com/nes.css@latest/css/nes.min.css' rel='stylesheet' />
+<link href='{{ "/assets/css/me.css" | relative_url }}' rel='stylesheet' />
 <div class="gameboy">
     <div class="screen-cont">
         <div class="screen">
             <div class="power power-on"></div>
-            <div class="sound sound-on"></div>
+			<label id='mute-toggle' class="sound sound-on"><input id='mute' type="checkbox" style='display:none'></label>
             <div class="header">DOT MATRIX WITH STEREO SOUND</div>
             <div class="main">
-				<div class="text">
-                {{ content }}
-				</div>
+				<span class="text" style='white-space:pre'></span>
             </div>
         </div>
     </div>
 </div>
+
+<script src='{{ "/assets/js/typed.min.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/me.js" | relative_url }}'></script>
 <!-- me content finish -->
