@@ -170,6 +170,20 @@
 					height:244px;
 				}
 
+				& .ash {
+					margin-bottom : 2rem;
+
+					& img {
+						width:100px;
+						height:100px;
+
+						@include media-query($on-laptop) {
+							width:80px;
+							height:80px;
+						}
+					}
+				}
+
 				& .text {
 					color: white;
 				}
