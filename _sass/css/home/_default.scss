@@ -29,17 +29,12 @@ section.main {
     position: absolute;
     color: white;
     font-size:4rem;
-    top: 550px;
+    top: 80%;
     left: 30px;
 
     @include media-query($on-laptop) {
       font-size:2rem;
-      top: 170px;
       left: 20px;
     }
   }
-}
-
-canvas {
-  display:none;
 }
