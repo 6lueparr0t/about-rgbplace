@@ -7,6 +7,10 @@
   height: 40px;
   position: sticky;
   z-index:2;
+
+  &.none {
+    display:none;
+  }
 }
 
 .banner.test {
