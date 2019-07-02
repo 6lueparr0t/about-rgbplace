@@ -1,0 +1,36 @@
+section.main {
+  background: url(/assets/img/home/main.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 65px 0 400px 0;
+
+  @include media-query($on-laptop) {
+    padding: 65px 0 300px 0;
+  }
+
+  height: auto;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 1s ease-out;
+
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  & .main-content {
+    position: absolute;
+    color: white;
+    font-size:4rem;
+    top: 360px;
+    left: 30px;
+
+    @include media-query($on-laptop) {
+      font-size:2rem;
+      top: 310px;
+      left: 20px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+::-moz-selection {
+    color: black;
+    background: white;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+html {
+    cursor : default;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+html, body, pre, code, kbd, samp {
+    font-family: "dot";
+}
+
+main .wrapper {
+    max-width: 100%;
+    padding-right: 7.5px !important;
+    padding-left: 7.5px !important;
+}

@@ -1,3 +1,11 @@
+.swiper {
+	position : relative;
+	height : 500px;
+	width:100%;
+	max-width: 855px;
+	margin : 2rem auto 4rem auto;
+}
+
 .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white {
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2027%2044%22%3E%3Cpath%20d%3D%22M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%22%20fill%3D%22%23ffffff%22%20style%3D%22%26%2310%3B%20%20%20%20stroke%3A%20black%3B%26%2310%3B%22%2F%3E%3C%2Fsvg%3E") !important;
 }

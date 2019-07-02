@@ -2,38 +2,49 @@
 layout: default
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href="{{ '/assets/css/home.css' | relative_url }}" rel="stylesheet" />
 
-<div class="home">
-
-<h3>Photo news</h3>
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-	<div class="swiper-slide"><a href="#"><img src="/assets/img/alone.png"/></a>
-		<div class="swiper-title">
-			<a href='#'>페이지 업데이트 중 . .</a>
-		</div>
-
-		<div class="swiper-content">
-			??? : Git 페이지 업데이트 중입니다.<br/>
-			누가 와서 볼 것도 아니지만<br/>
-			그냥 한번 남겨봅니다.
-		</div>
-	</div>
-	<div class="swiper-slide"><a href="#"><img src="/assets/img/20180726_001.png"/></a>
-		<div class="swiper-title">
-			<a href='http://rgbplace.com'>November 2018, Beta Open !</a>
-		</div>
-	</div>
-  </div>
-   
-  <div class="swiper-pagination swiper-pagination-white"></div>
-   
-  <div class="swiper-button-next swiper-button-white"></div>
-  <div class="swiper-button-prev swiper-button-white"></div>
+<div class="status-bar">
+	<div class="banner test"> 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트&nbsp;</div>
+	<div class="banner test second"> 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트&nbsp;</div>
 </div>
 
-</div>
+<section class="main">
+	<div class="main-content">
+		그때 그 시절..
+	</div>
+</section>
 
+<div class="swiper">
+	<h3>Photo news</h3>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+		<div class="swiper-slide"><a href="#"><img src="/assets/img/home/alone.png"/></a>
+			<div class="swiper-title">
+				<a href='#'>페이지 업데이트 중 . .</a>
+			</div>
+
+			<div class="swiper-content">
+				??? : Git 페이지 업데이트 중입니다.<br/>
+				누가 와서 볼 것도 아니지만<br/>
+				그냥 한번 남겨봅니다.
+			</div>
+		</div>
+		<div class="swiper-slide"><a href="#"><img src="/assets/img/home/20180726_001.png"/></a>
+			<div class="swiper-title">
+				<a href='http://rgbplace.com'>November 2018, Beta Open !</a>
+			</div>
+		</div>
+	  </div>
+
+	  <div class="swiper-pagination swiper-pagination-white"></div>
+
+	  <div class="swiper-button-next swiper-button-white"></div>
+	  <div class="swiper-button-prev swiper-button-white"></div>
+	</div>
+
+</div>
+<script src="{{ '/assets/js/home.js' | relative_url}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script>
 var swiper = new Swiper('.swiper-container', {
