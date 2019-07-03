@@ -1,3 +1,13 @@
+@-webkit-keyframes turn-on {
+  0% {
+    background: url(/assets/img/home/main.jpg) no-repeat center top fixed;
+  }
+
+  100% {
+    background: url(/assets/img/home/main.jpg) no-repeat center center fixed;
+  }
+}
+
 @keyframes turn-on {
   0% {
     background: url(/assets/img/home/main.jpg) no-repeat center top fixed;
@@ -10,6 +20,7 @@
 
 section.main {
   margin-top:50px;
+  -webkit-animation: turn-on 10s linear 1 alternate forwards;
   animation: turn-on 10s linear 1 alternate forwards;
   -webkit-background-size: cover;
   background-size: cover;
