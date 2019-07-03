@@ -1,14 +1,4 @@
-@-webkit-keyframes turn-on {
-  0% {
-    background: url(/assets/img/home/main.jpg) no-repeat center top fixed;
-  }
-
-  100% {
-    background: url(/assets/img/home/main.jpg) no-repeat center center fixed;
-  }
-}
-
-@keyframes turn-on {
+@include keyframes(turn-on) {
   0% {
     background: url(/assets/img/home/main.jpg) no-repeat center top fixed;
   }
@@ -20,8 +10,7 @@
 
 section.main {
   margin-top:50px;
-  -webkit-animation: turn-on 10s linear 1 alternate forwards;
-  animation: turn-on 10s linear 1 alternate forwards;
+  @include animation('turn-on 10s linear 1 alternate');
   -webkit-background-size: cover;
   background-size: cover;
   padding: 275px 0 275px 0;
