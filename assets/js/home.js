@@ -136,6 +136,23 @@ document.getElementsByTagName('head')[0].appendChild(style);
 // var maingImg = document.querySelector('.main img');
 // var pixelate = new Pixelate(maingImg);
 
+document.addEventListener("ready", function (event) {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
 window.addEventListener("load", function (event) {
     /*
     !(function () {
@@ -158,3 +175,5 @@ window.addEventListener("load", function (event) {
     })();
     */
 });
+
+AOS.init();

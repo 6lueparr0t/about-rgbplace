@@ -2,6 +2,7 @@
 layout: default
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="{{ '/assets/css/home.css' | relative_url }}" rel="stylesheet" />
 
 <div class="status-bar">
@@ -15,10 +16,8 @@ layout: default
 	</div>
 </section>
 <section class="feature1">
-	<div class="feature-content center">
-		시작하세요!<br/>
-		당신이 있는 곳에서.
-	</div>
+	<div class="feature-content header center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">시작하세요!</div>
+	<div class="feature-content body center" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="0" data-aos-anchor-placement="bottom-bottom">당신이 있는 곳에서.</div>
 </section>
 <div class="swiper">
 	<h3>Photo news</h3>
@@ -49,21 +48,7 @@ layout: default
 	</div>
 
 </div>
-<script src="{{ '/assets/js/home.js' | relative_url}}"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-<script>
-var swiper = new Swiper('.swiper-container', {
-	slidesPerView: 1,
-	keyboard: {
-		enabled: true,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-});
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="{{ '/assets/js/home.js' | relative_url}}"></script>

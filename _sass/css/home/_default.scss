@@ -8,15 +8,18 @@
   }
 }
 
+section {
+  margin-top : 50px;
+}
+
 section.main {
-  margin-top:50px;
   @include animation('turn-on 10s linear 1 alternate');
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 275px 0 275px 0;
+  padding: 275px 0;
 
   @include media-query($on-laptop) {
-    padding: 150px 0 150px 0;
+    padding: 150px 0;
   }
 
   -webkit-filter: grayscale(100%);
@@ -44,4 +47,30 @@ section.main {
       font-size:1.4rem;
     }
   }
+}
+
+section.feature1 {
+  padding: 300px 0;
+
+  .header {
+    font-size:4rem;
+
+    @include media-query($on-laptop) {
+      font-size:2rem;
+    }
+  }
+
+  .body {
+    color:$oc-gray-7;
+    font-size:3rem;
+
+    @include media-query($on-laptop) {
+      font-size:1.4rem;
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
 }
