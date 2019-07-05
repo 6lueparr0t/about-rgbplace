@@ -127,7 +127,7 @@ var keyFrames = '\
         100% { -webkit-transform: translate(LEFT_POSITION, 0); }\
     }';
 
-var marquee = document.querySelector('.banner').getBoundingClientRect().width - 8;
+var marquee = document.querySelector('.banner').getBoundingClientRect().width - 17;
 
 document.querySelector('.banner.second').style.left = marquee+"px";
 style.innerHTML = keyFrames.replace(/LEFT_POSITION/g, -marquee+"px");
