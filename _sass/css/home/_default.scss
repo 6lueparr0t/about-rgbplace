@@ -94,7 +94,7 @@ section.feature-1 {
 	margin: 20rem 0;
 
 	@include media-query($on-laptop) {
-		margin: 15rem 0;
+		margin: 10rem 0;
 	}
 
 	display: flex;
@@ -103,9 +103,16 @@ section.feature-1 {
 		flex: 1;
 
 		&.feature-image img {
-			max-width: 600px;
+			max-width: 700px;
 			width: 100%;
 			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+			margin-left: 4rem;
+			padding:1rem;
+			@include media-query($on-laptop) {
+				margin-left: 0rem;
+				padding:.2rem;
+			}
 		}
 
 		&.feature-content {
@@ -133,21 +140,33 @@ section.feature-2 {
 	margin: 20rem 0;
 
 	@include media-query($on-laptop) {
-		margin: 15rem 0;
+		margin: 10rem 0;
 	}
 
 	display: flex;
 
 	& div {
-		flex: 1;
-
 		&.feature-image img {
-			max-width: 600px;
+			flex: 2;
+
+			max-width: 800px;
+			@include media-query($on-laptop) {
+				max-width: 200px;
+			}
 			width: 100%;
 			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+			margin-right: 4rem;
+			padding:1rem;
+			@include media-query($on-laptop) {
+				margin-right: 0rem;
+				padding:.2rem;
+			}
 		}
 
 		&.feature-content {
+			flex: 1;
+
 			margin: auto;
 			text-align: center;
 			font-size: 1.2rem;
@@ -178,6 +197,11 @@ div.sub-title {
 }
 
 section.finish {
+	margin-top : 20rem;
+	@include media-query($on-laptop) {
+		margin-top : 10rem;
+	}
+
 	background: url(/assets/img/home/finish.jpg) no-repeat center top fixed;
 	background-size: cover;
 	@include media-query($on-laptop) {
