@@ -104,6 +104,15 @@ section.feature-1 {
 
 		&.feature-image img {
 			max-width: 700px;
+			@include media-query(1400px) {
+				max-width:500px;
+			}
+			@include media-query(1150px) {
+				max-width:350px;
+			}
+			@include media-query($on-laptop) {
+				max-width: 200px;
+			}
 			width: 100%;
 			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 
@@ -124,13 +133,16 @@ section.feature-1 {
 				text-align: center;
 				font-size: 3rem;
 
+				@include media-query(1150px) {
+					font-size:2rem;
+				}
 				@include media-query($on-laptop) {
-					font-size: 1rem;
+					font-size:1rem;
 				}
 			}
 
-			@include media-query($on-laptop) {
-				font-size: .8rem;
+			@include media-query(1150px) {
+				font-size:.8rem;
 			}
 		}
 	}
@@ -149,9 +161,15 @@ section.feature-2 {
 		&.feature-image img {
 			flex: 2;
 
-			max-width: 800px;
+			max-width: 700px;
+			@include media-query(1400px) {
+				max-width:500px;
+			}
+			@include media-query(1150px) {
+				max-width:350px;
+			}
 			@include media-query($on-laptop) {
-				max-width: 200px;
+				max-width: 150px;
 			}
 			width: 100%;
 			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -175,12 +193,15 @@ section.feature-2 {
 				text-align: center;
 				font-size: 3rem;
 
+				@include media-query(1150px) {
+					font-size:2rem;
+				}
 				@include media-query($on-laptop) {
-					font-size: 1rem;
+					font-size:1rem;
 				}
 			}
 
-			@include media-query($on-laptop) {
+			@include media-query(1150px) {
 				font-size: .8rem;
 			}
 		}
