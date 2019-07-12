@@ -217,8 +217,29 @@ div.sub-title {
 	}
 }
 
+div.half-arrow-title {
+  text-align: right;
+  font-size: 2rem;
+  margin: auto;
+  max-width: 850px;
+
+  & .box {
+    border-bottom: 1px solid black;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color:black;
+    }
+  }
+
+  @include media-query($on-laptop) {
+    font-size: 1.2rem;
+  }
+}
+
 section.finish {
-	margin-top : 20rem;
+	margin-top : 18rem;
 	@include media-query($on-laptop) {
 		margin-top : 10rem;
 	}
