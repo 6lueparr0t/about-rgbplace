@@ -167,7 +167,7 @@
 
 				@include media-query($on-laptop) {
 					top : -10px;
-					height:244px;
+					height:300px;
 				}
 
 				& .ash {
@@ -186,6 +186,14 @@
 
 				& .text {
 					color: white;
+
+					.continue {
+						text-align : right;
+						a {
+							color: white;
+							text-decoration: none;
+						}
+					}
 				}
 			}
 		}

@@ -28,7 +28,7 @@ function playSound (time) {
 
 window.addEventListener("load", function (event) {
 	var typed = new Typed('.text', {
-		strings: ['Name : 임대현^1000\n\nBirth : 1991 / 12 / 30^1000\n\nGender : 남자^1000\n\nJob : 풀 스택을 지향하는 웹(PHP) 개발자'],
+		strings: ['Name : 임대현^1000\n\nBirth : 1991 / 12 / 30^1000\n\nGender : 남자^1000\n\nJob : 풀 스택을 지향하는 웹 개발자.. ^2000 `\n\n\n<div class="continue stage1"><a href="javascript:;" onclick="alert(\'업데이트 중입니다.\');" >[ Continue ]</a></div>\n\n`'],
 		startDelay: 2000,
 		backSpeed: 100,
 		typeSpeed: 100,
