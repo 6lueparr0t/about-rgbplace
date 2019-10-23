@@ -4,11 +4,11 @@ var interval ;
 
 document.querySelector('#mute').addEventListener('change', function () {
 	if(this.checked) {
-		keystrokeSound.volume = 0;
-		this.parentElement.className = 'sound sound-off';
+        keystrokeSound.volume = 1.0;
+        this.parentElement.className = 'sound sound-on';
 	} else {
-		keystrokeSound.volume = 1.0;
-		this.parentElement.className = 'sound sound-on';
+        keystrokeSound.volume = 0;
+        this.parentElement.className = 'sound sound-off';
 	}
 });
 
@@ -19,13 +19,16 @@ function playSound (time) {
 
 	setTimeout(function() {
 		interval = setInterval(function(){
+			keystrokeSound.pause();
+			keystrokeSound.currentTime = 0;
+            var playPromise = keystrokeSound.play();
+            if (playPromise !== undefined) {
+                playPromise.then( _ => {
 
-            keystrokeSound.pause();
-            keystrokeSound.currentTime = 0;
-
-            keystrokeSound.oncanplaythrough = function(){
-                keystrokeSound.play();
-            };
+                })
+            .catch(error => {
+                });
+            }
 
 		}, 100);
 	}, time);
