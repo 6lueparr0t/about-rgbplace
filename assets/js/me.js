@@ -22,18 +22,6 @@ function playSound (time) {
 			keystrokeSound.pause();
 			keystrokeSound.currentTime = 0;
 			keystrokeSound.play();
-
-            var playPromise = keystrokeSound.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then( _ => {
-                    keystrokeSound.pause()
-                })
-            .catch(error => {
-            		console.log(error);
-                });
-            }
-
 		}, 100);
 	}, time);
 }
