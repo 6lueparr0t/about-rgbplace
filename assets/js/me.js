@@ -19,9 +19,14 @@ function playSound (time) {
 
 	setTimeout(function() {
 		interval = setInterval(function(){
-			keystrokeSound.pause();
-			keystrokeSound.currentTime = 0;
-			keystrokeSound.play();
+
+            keystrokeSound.pause();
+            keystrokeSound.currentTime = 0;
+
+            keystrokeSound.oncanplaythrough = function(){
+                keystrokeSound.play();
+            };
+
 		}, 100);
 	}, time);
 }
