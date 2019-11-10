@@ -4,11 +4,11 @@ var interval ;
 
 document.querySelector('#mute').addEventListener('change', function () {
 	if(this.checked) {
-		keystrokeSound.volume = 0;
-		this.parentElement.className = 'sound sound-off';
+        keystrokeSound.volume = 1.0;
+        this.parentElement.className = 'sound sound-on';
 	} else {
-		keystrokeSound.volume = 1.0;
-		this.parentElement.className = 'sound sound-on';
+        keystrokeSound.volume = 0;
+        this.parentElement.className = 'sound sound-off';
 	}
 });
 
@@ -21,14 +21,22 @@ function playSound (time) {
 		interval = setInterval(function(){
 			keystrokeSound.pause();
 			keystrokeSound.currentTime = 0;
-			keystrokeSound.play();
+            var playPromise = keystrokeSound.play();
+            if (playPromise !== undefined) {
+                playPromise.then( _ => {
+
+                })
+            .catch(error => {
+                });
+            }
+
 		}, 100);
 	}, time);
 }
 
 window.addEventListener("load", function (event) {
 	var typed = new Typed('.text', {
-		strings: ['Name : 임대현^1000\n\nBirth : 1991 / 12 / 30^1000\n\nGender : 남자^1000\n\nJob : 풀 스택을 지향하는 웹(PHP) 개발자'],
+		strings: ['Name : 임대현^1000\n\nBirth : 1991 / 12 / 30^1000\n\nGender : 남자^1000\n\nJob : 풀 스택을 지향하는 웹 개발자.. ^2000 `\n\n\n<div class="continue stage1"><a href="javascript:;" onclick="alert(\'업데이트 중입니다.\');" >[ Continue ]</a></div>\n\n`'],
 		startDelay: 2000,
 		backSpeed: 100,
 		typeSpeed: 100,
