@@ -1,4 +1,6 @@
 var keystrokeSound = new Audio('/assets/sound/sfx_sounds_Blip7.wav');
+keystrokeSound.volume = 0;
+
 var interval ;
 //var cnt = 0;
 
