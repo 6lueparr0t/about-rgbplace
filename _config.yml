@@ -26,12 +26,12 @@ disqus:
   shortname: 6lueparr0t
 
 category:
-- title: me
+- title: me?
   url: /me/
 #- title: QNA
 #  url: /qna/
-- title: Blog
-  url: /pages/
+#- title: Blog
+#  url: /pages/
 
 
 # setup
