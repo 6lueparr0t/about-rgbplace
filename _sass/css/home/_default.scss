@@ -95,6 +95,7 @@ section.feature-1 {
 
 	@include media-query($on-laptop) {
 		margin: 10rem 0;
+		display: list-item;
 	}
 
 	display: flex;
@@ -111,7 +112,8 @@ section.feature-1 {
 				max-width:350px;
 			}
 			@include media-query($on-laptop) {
-				max-width: 200px;
+				max-width: 100%;
+				margin-bottom:2rem;
 			}
 			width: 100%;
 			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -127,7 +129,7 @@ section.feature-1 {
 		&.feature-content {
 			margin: auto;
 			text-align: center;
-			font-size: 1.2rem;
+			font-size: 24px;
 
 			.title {
 				text-align: center;
@@ -142,7 +144,7 @@ section.feature-1 {
 			}
 
 			@include media-query(1150px) {
-				font-size:.8rem;
+				font-size:12px;
 			}
 		}
 	}
@@ -236,6 +238,12 @@ div.half-arrow-title {
   @include media-query($on-laptop) {
     font-size: 1.2rem;
   }
+}
+
+.mail {
+	&.white {
+		color: white;
+	}
 }
 
 section.finish {

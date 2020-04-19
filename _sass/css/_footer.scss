@@ -28,6 +28,10 @@
 				color:$oc-gray-4 !important;
 				transition:all .2s ease;
 			}
+			.place.white {
+				color:white !important;
+				transition:all .2s ease;
+			}
 		}
 
 		&.r:hover {
@@ -38,6 +42,9 @@
 		}
 		&.b:hover {
 			color:$oc-blue-5 !important;
+		}
+		&.place.white:hover {
+			color:white !important;
 		}
 	}
 }
