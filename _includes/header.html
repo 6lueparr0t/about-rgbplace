@@ -20,7 +20,7 @@
 
 					<div class="trigger">
 						{% for menu in site.category %}
-						<a  class="page-link" href="{{menu.url}}" target="_blank">{{menu.title}}</a>
+						<a  class="page-link" href="{{menu.url}}">{{menu.title}}</a>
 							{% if forloop.index != site.category.size %}/{% endif%}
 						{% endfor %}
 					</div>

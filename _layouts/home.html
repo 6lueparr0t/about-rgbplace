@@ -1,102 +1,26 @@
 ---
 layout: default
+comments: true
 ---
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link href="{{ '/assets/css/home.css' | relative_url }}" rel="stylesheet" />
-
-<div class="status-bar none">
-	<div class="banner test"> 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트&nbsp;</div>
-	<div class="banner test second"> 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트&nbsp;</div>
+<!-- me content start -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<link href="{{ '/assets/css/me.css' | relative_url }}" rel="stylesheet" />
+<div class="gameboy">
+    <div class="screen-cont">
+        <div class="screen">
+            <div class="power power-on"></div>
+			<label id='mute-toggle' class="sound sound-off"><input id='mute' type="checkbox" style='display:none'></label>
+            <div class="header">DOT MATRIX WITH STEREO SOUND</div>
+            <div class="main">
+				<div class="ash">
+                    <img src="/assets/img/me/ash.gif" />
+                </div>
+				<span class="text" style='white-space:pre'></span>
+            </div>
+        </div>
+    </div>
 </div>
 
-<section class="main">
-	<div class="main-content">
-		골목대장, 그 감성으로.
-	</div>
-</section>
-
-<section class="main-text">
-	<div class="header center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">시작하세요!</div>
-	<div class="body center" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500" data-aos-offset="0" data-aos-anchor-placement="bottom-bottom">당신이 있는 곳에서.</div>
-</section>
-
-<section class="feature-1">
-	<div class="feature-image" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" >
-		<img src="/assets/img/home/feature1.jpg" />
-	</div>
-	<div class="feature-content" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-		<p class="title">지역 기반 커뮤니티</p> 다양한 지역의 게시판들이 관리되며, 해당 지역의 소식을 공유할 수 있습니다.
-	</div>
-</section>
-
-<section class="feature-1">
-	<div class="feature-image" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="center-bottom" >
-		<img src="/assets/img/home/feature2.jpg" />
-	</div>
-	<div class="feature-content" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-		<p class="title">추억의 장소들</p> 당신의 기억 속에만 남아 있을 수 있는 그 장소들을 공유해주세요.
-	</div>
-</section>
-
-<section class="feature-1">
-	<div class="feature-image" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" >
-		<img src="/assets/img/home/feature3.jpg" />
-	</div>
-	<div class="feature-content" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-		<p class="title">상상하지 못한 맛</p> 지역 주민과의 상생으로 발전하는 우리 가게!
-	</div>
-</section>
-
-<div class="sub-title">성장하는 커뮤니티</div>
-<div class="swiper">
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><a href="#"><img src="/assets/img/home/alone.png"/></a>
-				<div class="swiper-title">
-					<a href="https://rgbplace.com/space/notice/68">
-						<span  style="color:red">[공지사항]</span> 파트너 모집 합니다.
-					</a>
-				</div>
-
-				<div class="swiper-content" style="text-shadow:none;">
-					<a class="rgbplace" href="https://rgbplace.com">
-						<span class="r">R</span><span class="g">G</span><span class="b">B</span>
-						<span class="place white">place</span>
-					</a>
-					를 같이 운영하실 분을 모집합니다.<br/>
-					<span class="swiper-no-swiping" style="cursor:text;">scallop99@naver.com</span> 연락 주세요!
-				</div>
-			</div>
-			<div class="swiper-slide"><a href="#"><img src="/assets/img/home/20180726_001.png"/></a>
-				<div class="swiper-title">
-					<a href='http://rgbplace.com'>November 2018, Beta Open !</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="swiper-pagination swiper-pagination-white"></div>
-
-		<div class="swiper-button-next swiper-button-white"></div>
-		<div class="swiper-button-prev swiper-button-white"></div>
-	</div>
-</div>
-
-<div class="half-arrow-title">
-	<div class="box">
-		<a href="/pages/">개발 후기 보러가기 <span>></span></a>
-	</div>
-</div>
-
-<section class="finish">
-	<div class="finish-content">
-		함께해요!</br>
-		<a class="logo" href="https://rgbplace.com">
-			<span class="r">R</span><span class="g">G</span><span class="b">B</span><span class="place white">PLACE</span>
-		</a>
-	</div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="{{ '/assets/js/home.js' | relative_url}}"></script>
+<script src="{{ '/assets/js/typed.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/me.js' | relative_url }}"></script>
+<!-- me content finish -->

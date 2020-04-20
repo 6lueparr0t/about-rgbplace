@@ -25,9 +25,9 @@ github_username: RGBplace
 disqus:
   shortname: 6lueparr0t
 
-category:
-- title: me?
-  url: /me/
+#category:
+#- title: me?
+#  url: /me/
 #- title: QNA
 #  url: /qna/
 #- title: Blog
