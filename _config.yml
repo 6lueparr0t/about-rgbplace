@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RGB place
-email: admin@rgbplace.com
+email: 6lueparr0t@gmail.com
 blog: blog.rgbplace.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome RGB place 🍭
