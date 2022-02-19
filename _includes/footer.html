@@ -6,10 +6,10 @@
         <ul class="contact-list">
           {% if site.github_username %}
           <li>
-			  <a class="rgbplace" href='https://blog.rgbplace.com/397'>
+			  <a class="rgbplace" href='https://blog.rgbplace.com'>
 				  <span class='r'>R</span><span class='g'>G</span><span class='b'>B</span>
 				  <span class='place'>place</span>
-			  </a> / {% include icon-github.html username=site.github_username %} / <a class="b" href="https://{{ site.blog }}">Blog</a>
+			  </a> / {% include icon-github.html username=site.github_username repository=site.github_repository %} / <a class="b" href="https://{{ site.youtube }}">Youtube</a>
           </li>
           {% endif %}
           <li>e-mail <a class="r" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
