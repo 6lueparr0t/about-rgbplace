@@ -7,7 +7,7 @@ alias jkhome="  cd $JEKYLL"
 alias jkcss="   cd $JEKYLL/_sass/"
 
 alias jkserv="jkhome; jekyll serve"
-alias jkpush="git add .; git commit -a -m \"auto commit `date '+%Y-%m-%d %T'`\"; git push origin master"
+alias jkpush="jkhome; git add .; git commit -a -m \"auto commit `date '+%Y-%m-%d %T'`\"; git push origin master"
 alias jkpull="jkhome; git pull"
 alias jktime="date '+%Y-%m-%d %H:%M:%S %z'"
 ```
